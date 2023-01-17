@@ -1,0 +1,21 @@
+.primaryButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans';
+    background: var(--secondary);
+    border-radius: 13px;
+    min-width: 240px;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.primaryButton:hover {
+    background: #A39764;
+    color: white;
+}
+
+.primaryButton:focus {
+    text-decoration: underline;
+}

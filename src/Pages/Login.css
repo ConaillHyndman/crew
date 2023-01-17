@@ -1,0 +1,15 @@
+.loginContainer {
+    background-color: white;
+    display: flex;
+}
+
+.imageContainer {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    max-width: 512px;
+}
+
+.logoImage {
+    max-width: 200px;
+}

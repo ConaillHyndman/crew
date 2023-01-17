@@ -4,7 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Home from './Pages/Home';
-import Styles from './Pages/Styles';
+import ComponentLibrary from './Pages/ComponentLibrary';
+import Login from './Pages/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +13,8 @@ root.render(
     <Routes>
       <Route exact path='/' element={<Home />} />
       <Route index element={<Home />} />
-      <Route path='/styles' element={<Styles />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/component-library' element={<ComponentLibrary />} />
     </Routes>
   </BrowserRouter>
 );

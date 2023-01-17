@@ -1,13 +1,102 @@
+:root {
+  --light-background: #F2F2F2;
+  --background: #283740;
+  --primary: #94B6C2;
+  --secondary: #B8B08C;
+  --error: #BB9390;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--light-background);
+  background-color: var(--light-background);
+}
+
+.h1 {
+  font-size: 96px;
+  font-weight: 300;
+}
+
+.h2 {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.h3 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.h4 {
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.h5 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.h6 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.subtitle1 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.subtitle2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.body1 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.body2 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.contentContainer {
+  background-color: white;
+  min-height: 188px;
+  max-width: 936px;
+  border-radius: 12px;
+  margin: 75px auto;
 }
