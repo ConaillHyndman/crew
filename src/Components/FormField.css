@@ -1,0 +1,26 @@
+.formField {
+    display: flex;
+    flex-direction: column;
+    width: 434px;
+}
+
+.formFieldLabels {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 8px;
+}
+
+.subText {
+    color: var(--grey);
+    padding-left: 8px;
+}
+
+input {
+    border: 1px solid var(--grey);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.siteInformationButton {
+    color: white;
+}

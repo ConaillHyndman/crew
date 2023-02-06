@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./Footer.css"
-import LinkButton from './LinkButton';
+import LinkButtonWhite from './LinkButtonWhite';
 
 const onHomeClick = () => {
     console.log("Home clicked");
@@ -15,13 +15,13 @@ class Footer extends Component {
         return (
             <>
                 <div className='footer'>
-                    <LinkButton
+                    <LinkButtonWhite
                         text="Home"
                         onClick={onHomeClick}
                         className="logOutButton"
                     />
                     <p className='subtitle2 footerText'>Crew+</p>
-                    <LinkButton
+                    <LinkButtonWhite
                         text="Site information"
                         onClick={onSiteInfoClick}
                         className="logOutButton"

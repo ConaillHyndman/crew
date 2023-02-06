@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logoImage from "../Assets/images/Logo.svg";
 import "./Header.css"
-import LinkButton from './LinkButton';
+import LinkButtonWhite from './LinkButtonWhite';
 
 const onLogOutClick = () => {
     console.log("Log out clicked");
@@ -13,7 +13,7 @@ class header extends Component {
             <>
                 <div className='header'>
                     <img src={logoImage} alt="Crew+ logo" />
-                    <LinkButton
+                    <LinkButtonWhite
                         text="Log out"
                         onClick={onLogOutClick}
                         className="logOutButton"

@@ -1,14 +1,14 @@
-.linkButton {
+.linkButtonBlack {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Open Sans';
     background: transparent;
     border: none;
-    color: white;
+    color: var(--dark);
 }
 
-.linkButton:focus {
+.linkButtonBlack:focus {
     color: var(--primary);
     text-decoration: underline;
 }
