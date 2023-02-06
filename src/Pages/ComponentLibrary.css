@@ -1,0 +1,57 @@
+.fontWeightStyles,
+.typographyStyles,
+.colorsStyles,
+.buttonsStyles,
+.typographyStylesContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    margin-bottom: 20px;
+
+}
+
+.typographyMargin {
+    margin: 0 !important;
+}
+
+.colourContainer {
+    margin: 10px;
+    padding: 20px 10px;
+    width: 100px;
+}
+
+.background {
+    background-color: var(--background);
+    color: white;
+}
+
+.primary {
+    background-color: var(--primary);
+    color: black;
+}
+
+.secondary {
+    background-color: var(--secondary);
+    color: black;
+}
+
+.error {
+    background-color: var(--error);
+    color: black;
+}
+
+.colours {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+
+}
+
+.background,
+.primary,
+.secondary,
+.error {
+    margin: 10px;
+    padding: 20px 10px;
+    width: 100px;
+}

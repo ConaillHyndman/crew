@@ -1,0 +1,22 @@
+.linkButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans';
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.linkButton:focus {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.linkText {
+    cursor: pointer;
+}
+
+.linkText:hover {
+    text-decoration: underline;
+}

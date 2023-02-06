@@ -1,0 +1,23 @@
+.secondaryButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans';
+    background: transparent;
+    border: solid 4px var(--secondary);
+    color: var(--secondary);
+    border-radius: 13px;
+    min-width: 176px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.secondaryButton:hover {
+    text-decoration: underline;
+}
+
+.secondaryButton:focus {
+    background-color: var(--secondary);
+    color: black;
+    text-decoration: underline;
+}
