@@ -101,4 +101,12 @@ code {
   max-width: 936px;
   border-radius: 12px;
   margin: 75px auto;
+  padding: 12px 96px 48px;
+}
+
+.rightContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

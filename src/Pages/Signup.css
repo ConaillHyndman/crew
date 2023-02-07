@@ -1,4 +1,4 @@
-.loginContainer {
+.signupContainer {
     background-color: white;
     display: flex;
 }
@@ -15,12 +15,22 @@
     max-width: 200px;
 }
 
-.loginContentContainer {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
+.signupForm {
+    margin-top: 8px;
 }
 
-.signupLink {
+.signupButton {
     display: flex;
+    margin-top: 24px;
+    justify-content: center;
+}
+
+.signupSiteInformationButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.signupIllustration {
+    margin-top: 24px;
 }
