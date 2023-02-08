@@ -95,16 +95,29 @@ code {
     monospace;
 }
 
-.contentContainer {
+.home-content-container {
   background-color: white;
   min-height: 188px;
   max-width: 936px;
   border-radius: 12px;
-  margin: 75px auto;
+  margin: 77px auto;
   padding: 12px 96px 48px;
 }
 
-.rightContainer {
+.content-container {
+  background-color: white;
+  min-height: 188px;
+  max-width: 936px;
+  border-radius: 12px;
+  margin: 24px auto;
+  padding: 12px 96px 48px;
+}
+
+.back-button {
+  margin-top: 32px;
+}
+
+.right-container {
   width: 100%;
   display: flex;
   justify-content: center;

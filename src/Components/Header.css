@@ -5,3 +5,7 @@
     max-height: 78px;
     background-color: var(--background);
 }
+
+.logo-button:hover {
+    cursor: pointer;
+}

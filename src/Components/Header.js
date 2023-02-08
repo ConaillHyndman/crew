@@ -3,19 +3,30 @@ import logoImage from "../Assets/images/Logo.svg";
 import "./Header.css"
 import LinkButtonWhite from './LinkButtonWhite';
 
-const onLogOutClick = () => {
-    console.log("Log out clicked");
-}
+const onLogoButtonClick = () => {
+    const link = "/";
+    window.location.assign(link);
+};
+
+const onLogOutButtonClick = () => {
+    const link = "/login";
+    window.location.assign(link);
+};
 
 class header extends Component {
     render() {
         return (
             <>
                 <div className='header'>
-                    <img src={logoImage} alt="Crew+ logo" />
+                    <img
+                        className="logo-button"
+                        src={logoImage}
+                        alt="Crew+ logo"
+                        onClick={onLogoButtonClick}
+                    />
                     <LinkButtonWhite
                         text="Log out"
-                        onClick={onLogOutClick}
+                        onClick={onLogOutButtonClick}
                         className="logOutButton"
                     />
                 </div>

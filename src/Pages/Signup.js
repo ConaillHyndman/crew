@@ -7,8 +7,14 @@ import FormField from '../Components/FormField';
 import PrimaryButton from '../Components/PrimaryButton';
 
 const onSiteInfoClick = () => {
-    console.log("Site information button click");
+    const link = "/site-information";
+    window.location.assign(link);
 }
+
+const onSignupButtonClick = () => {
+    const link = "/";
+    window.location.assign(link);
+};
 
 class Signup extends Component {
     render() {
@@ -26,8 +32,8 @@ class Signup extends Component {
                         />
                     </div>
                 </div>
-                <div className='rightContainer'>
-                    <div className='signupContentContainer'>
+                <div className='right-container'>
+                    <div className='signupcontent-container'>
                         <h1 className='h2'>
                             Join the team
                         </h1>
@@ -45,6 +51,7 @@ class Signup extends Component {
                         <div className="signupButton">
                             <PrimaryButton
                                 text="Signup"
+                                onClick={onSignupButtonClick}
                             />
                         </div>
                     </div>

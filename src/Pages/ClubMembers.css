@@ -1,0 +1,20 @@
+.table-header {
+    background-color: var(--dark);
+}
+
+th {
+    color: white;
+}
+
+td {
+    background-color: var(--light-background);
+}
+
+td {
+    border: 1px solid;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}

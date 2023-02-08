@@ -6,19 +6,21 @@ import LinkButtonWhite from '../Components/LinkButtonWhite';
 import LinkButtonBlack from '../Components/LinkButtonBlack';
 import FormField from '../Components/FormField';
 import PrimaryButton from '../Components/PrimaryButton';
-import { useNavigate } from 'react-router-dom';
 
 const onSiteInfoClick = () => {
-    console.log("Site information button click");
-}
+    const link = "/site-information";
+    window.location.assign(link);
+};
 
-// const onLoginButtonClick = () => {
-//     console.log("Login button click");
-//     const navigate = useNavigate();
-//     navigate('/');
-// }
+const onLoginButtonClick = () => {
+    const link = "/";
+    window.location.assign(link);
+};
 
-const navigate = useNavigate();
+const onJoinButtonClick = () => {
+    const link = "/signup";
+    window.location.assign(link);
+};
 
 class Login extends Component {
     render() {
@@ -36,8 +38,8 @@ class Login extends Component {
                         />
                     </div>
                 </div>
-                <div className='rightContainer'>
-                    <div className='loginContentContainer'>
+                <div className='right-container'>
+                    <div className='logincontent-container'>
                         <h1 className='h2'>
                             Login
                         </h1>
@@ -57,7 +59,7 @@ class Login extends Component {
                             <div className="loginButton">
                                 <PrimaryButton
                                     text="Login"
-                                    onClick={() => navigate('/')}
+                                    onClick={onLoginButtonClick}
                                 />
                             </div>
                             <div className='signupLink'>
@@ -66,6 +68,7 @@ class Login extends Component {
                                 </p>
                                 <LinkButtonBlack
                                     text="Join the team"
+                                    onClick={onJoinButtonClick}
                                 />
                             </div>
                         </div>
