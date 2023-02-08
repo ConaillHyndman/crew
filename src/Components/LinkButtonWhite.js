@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Button } from "react-bootstrap";
-import "./LinkButton.css";
+import "./LinkButtonWhite.css";
 
 
 
-class LinkButton extends Component {
+class LinkButtonWhite extends Component {
     render() {
         return (
             <>
                 <Button
                     variant='Link'
-                    className='linkButton'
+                    className="linkButtonWhite"
                     onClick={this.props.onClick}>
                     <span id={this.props.spanId} className='button linkText'>
                         {this.props.text}
@@ -21,4 +21,4 @@ class LinkButton extends Component {
     }
 }
 
-export default LinkButton;
+export default LinkButtonWhite;

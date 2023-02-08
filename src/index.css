@@ -4,12 +4,14 @@
   --primary: #94B6C2;
   --secondary: #B8B08C;
   --error: #BB9390;
+  --dark: #2B2B2B;
+  --grey: #A8A8A8;
 }
 
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: var(--light-background);
+  color: var(--dark);
   background-color: var(--light-background);
 }
 
@@ -93,10 +95,32 @@ code {
     monospace;
 }
 
-.contentContainer {
+.home-content-container {
   background-color: white;
   min-height: 188px;
   max-width: 936px;
   border-radius: 12px;
-  margin: 75px auto;
+  margin: 77px auto;
+  padding: 12px 96px 48px;
+}
+
+.content-container {
+  background-color: white;
+  min-height: 188px;
+  max-width: 936px;
+  border-radius: 12px;
+  margin: 24px auto;
+  padding: 12px 96px 48px;
+}
+
+.back-button {
+  margin: 32px auto 0 auto;
+  max-width: 1128px;
+}
+
+.right-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

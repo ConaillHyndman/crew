@@ -1,0 +1,36 @@
+.signupContainer {
+    background-color: white;
+    display: flex;
+}
+
+.imageContainer {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    max-width: 512px;
+    padding: 2%;
+}
+
+.logoImage {
+    max-width: 200px;
+}
+
+.signupForm {
+    margin-top: 8px;
+}
+
+.signupButton {
+    display: flex;
+    margin-top: 24px;
+    justify-content: center;
+}
+
+.signupSiteInformationButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.signupIllustration {
+    margin-top: 24px;
+}

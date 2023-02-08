@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import LinkButton from '../Components/LinkButton';
+import LinkButtonBlack from '../Components/LinkButtonBlack';
+import LinkButtonWhite from '../Components/LinkButtonWhite';
 import PrimaryButton from '../Components/PrimaryButton';
 import SecondaryButton from '../Components/SecondaryButton';
 import './ComponentLibrary.css';
@@ -55,9 +56,14 @@ class ComponentLibrary extends Component {
                         className="secondaryButton"
                         onClick={onSecondaryButtonClick}
                     />
-                    <LinkButton
+                    <LinkButtonWhite
                         text="Link Button"
-                        className="linkButton"
+                        className="LinkButtonWhite"
+                        onClick={onLinkButtonClick}
+                    />
+                    <LinkButtonBlack
+                        text="Link Button"
+                        className="LinkButtonBlack"
                         onClick={onLinkButtonClick}
                     />
                 </div>
