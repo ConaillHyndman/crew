@@ -1,0 +1,18 @@
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.homepage-cards{
+    background-color: var(--background);
+    border-radius: 12px;
+    padding: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-header {
+    margin: 0;
+}
