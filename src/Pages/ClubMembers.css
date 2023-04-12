@@ -12,9 +12,10 @@ td {
 
 td {
     border: 1px solid;
+    padding: 10px 5px;
 }
 
-.table-container {
+.club-table-container {
     display: flex;
     justify-content: center;
 }

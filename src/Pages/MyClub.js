@@ -26,6 +26,7 @@ class MyClub extends Component {
                 </div>
                 <div className='content-container'>
                     <h1 className='h2'>My club</h1>
+                    <p></p>
                     <PrimaryButton
                         text="Club members"
                         onClick={onClubMembersButtonClick}

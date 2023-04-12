@@ -13,6 +13,11 @@ const onBackButtonClick = () => {
     window.history.back();
 };
 
+const onAddMemberButtonClick = () => {
+    const link = "/add-member";
+    window.location.assign(link);
+};
+
 class ClubMembers extends Component {
     render() {
         return (
@@ -26,8 +31,12 @@ class ClubMembers extends Component {
                 </div>
                 <div className='content-container'>
                     <h1 className='h2'>Club members</h1>
-                    <div className='table-container'>
+                    <div className='club-table-container'>
                         <table>
+                            <LinkButtonBlack
+                                text="+ Add member"
+                                onClick={onAddMemberButtonClick}
+                            />
                             <tbody>
                                 <tr className='table-header'>
                                     <th>Rower name</th>
@@ -35,7 +44,7 @@ class ClubMembers extends Component {
                                     <th>Crew type</th>
                                 </tr>
                                 <tr>
-                                    <td>Rower 1</td>
+                                    <td>John Smith</td>
                                     <td>Under 12s</td>
                                     <td>Mixed</td>
                                     <td>
@@ -46,7 +55,7 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Rower 2</td>
+                                    <td>Christopher Robin</td>
                                     <td>Under 14s</td>
                                     <td>Males</td>
                                     <td>
@@ -57,7 +66,7 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Rower 3</td>
+                                    <td>James Bond</td>
                                     <td>Under 16s</td>
                                     <td>Mixed</td>
                                     <td>
@@ -68,7 +77,7 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Rower 4</td>
+                                    <td>David Rose</td>
                                     <td>Under 18s</td>
                                     <td>Males</td>
                                     <td>
@@ -79,7 +88,7 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Rower 5</td>
+                                    <td>Joey Tribiani</td>
                                     <td>Under 21s</td>
                                     <td>Mixed</td>
                                     <td>
@@ -90,7 +99,7 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Rower 6</td>
+                                    <td>Phoebe Buffey</td>
                                     <td>Veterans</td>
                                     <td>Females</td>
                                     <td>

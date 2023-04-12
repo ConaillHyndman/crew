@@ -1,0 +1,30 @@
+.table-header {
+    background-color: var(--dark);
+}
+
+th {
+    color: white;
+}
+
+td {
+    background-color: var(--light-background);
+}
+
+td {
+    border: 1px solid;
+    padding: 10px 5px;
+}
+
+.crews-table-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -4,11 +4,6 @@ import Footer from "../Components/Footer";
 import PrimaryButton from '../Components/PrimaryButton';
 import LinkButtonBlack from '../Components/LinkButtonBlack';
 
-const onAddMemberButtonClick = () => {
-    const link = "/add-member";
-    window.location.assign(link);
-};
-
 const onAddMemberInfoButtonClick = () => {
     const link = "/add-info";
     window.location.assign(link);
@@ -31,10 +26,6 @@ class MemberAccount extends Component {
                 </div>
                 <div className='content-container'>
                     <h1 className='h2'>Member account</h1>
-                    <PrimaryButton
-                        text="Add member"
-                        onClick={onAddMemberButtonClick}
-                    />
                     <PrimaryButton
                         text="Add info"
                         onClick={onAddMemberInfoButtonClick}
