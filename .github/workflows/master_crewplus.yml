@@ -14,21 +14,21 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
       - name: Set up Node.js version
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v1
         with:
           node-version: '18.x'
 
-      - name: npm clean-install, build, and test
+      - name: npm install, build, and test
         run: |
-          npm ci
+          npm install
           npm run build --if-present
           npm run test --if-present
       
       - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: node-app
           path: .
@@ -42,7 +42,7 @@ jobs:
 
     steps:
       - name: Download artifact from build job
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v2
         with:
           name: node-app
 
@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'CrewPlus'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D3278A5484BB4CDB8137BD044DC8B575 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_675A5CBC987245768DAC25D64CC4A6C2 }}
           package: .
