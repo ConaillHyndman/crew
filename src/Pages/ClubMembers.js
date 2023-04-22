@@ -18,6 +18,10 @@ const onAddMemberButtonClick = () => {
     window.location.assign(link);
 };
 
+const GET = "http://localhost:3001/club-members/6443cccaa8ffe74b4a9a1e36";
+
+console.log(GET.json);
+
 class ClubMembers extends Component {
     render() {
         return (
