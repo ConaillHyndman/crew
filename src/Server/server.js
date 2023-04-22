@@ -43,6 +43,17 @@ app.get("/club-members/:id", async(req, res) => {
     }
 })
 
+// Get more specific data back from clubmembers collection in test database using member ID number
+app.get("/club-members-data/:id", async(req, res) => {
+    try {
+        const {id} = req.params;
+        const member = await ClubMember.findById(id);
+        res.status(200).json(member.memberName + " - " + member.crewType);
+    } catch (error) {
+        res.status(500).json({message: error.message});
+    }
+})
+
 // app.get('/products', async(req,res) => {
 //     try {
 //         const products = await Product.find({});
