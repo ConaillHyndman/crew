@@ -33,24 +33,24 @@ app.get("/club-members", async (req, res) => {
 });
 
 // Get specific data back from clubmembers collection in test database using member ID number
-app.get("/club-members/:id", async(req, res) => {
+app.get("/club-members/:id", async (req, res) => {
     try {
-        const {id} = req.params;
+        const { id } = req.params;
         const member = await ClubMember.findById(id);
         res.status(200).json(member);
     } catch (error) {
-        res.status(500).json({message: error.message});
+        res.status(500).json({ message: error.message });
     }
 })
 
 // Get more specific data back from clubmembers collection in test database using member ID number
-app.get("/club-members-data/:id", async(req, res) => {
+app.get("/club-members-data/:id", async (req, res) => {
     try {
-        const {id} = req.params;
+        const { id } = req.params;
         const member = await ClubMember.findById(id);
         res.status(200).json(member.memberName + " - " + member.crewType);
     } catch (error) {
-        res.status(500).json({message: error.message});
+        res.status(500).json({ message: error.message });
     }
 })
 
