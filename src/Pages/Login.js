@@ -49,6 +49,7 @@ class Login extends Component {
                                 subtext="Usually your email"
                             />
                             <FormField
+                                type="password"
                                 label="Password"
                             />
                             <div className='forgottenPasswordLink'>

@@ -42,9 +42,11 @@ class Signup extends Component {
                                 label="Email"
                             />
                             <FormField
+                                type="password"
                                 label="Password"
                             />
                             <FormField
+                                type="password"
                                 label="Confirm password"
                             />
                         </div>

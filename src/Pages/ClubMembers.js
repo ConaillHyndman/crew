@@ -18,7 +18,61 @@ const onAddMemberButtonClick = () => {
     window.location.assign(link);
 };
 
+// const GET = fetch("http://localhost:3001/club-members/6443cccaa8ffe74b4a9a1e36", { mode: 'no-cors' });
+// const GET = "http://localhost:3001/club-members/6443cccaa8ffe74b4a9a1e36";
+// const data = GET.json;
+// console.log([data]);
+
+// const express = require('express');
+// const mongoose = require("mongoose");
+// const app = express();
+// const uri = "mongodb+srv://conaillhyndman:Cromlough14@crewpluscluster.iptdgiv.mongodb.net/?retryWrites=true&w=majority";
+
+// const GET = "http://localhost:3001/club-members/6443cccaa8ffe74b4a9a1e36";
+
+// mongoose.connect(uri)
+//     .then(() => {
+//         console.log("Connected to mongodb");
+//         app.listen(3001, () => {
+//             console.log("Node API app us running on port 3001");
+//             fetch(GET)
+//                 .then(response => {
+//                     return response.json();
+//                 })
+//                 .then(d => {
+//                     console.log(d);
+//                 })
+//         })
+//     }).catch((error) => {
+//         console.log(error);
+//     });
+
 class ClubMembers extends Component {
+
+    // constructor() {
+    //     super();
+    //     this.state = {
+    //         _id: [{}],
+    //         clubName: [{}],
+    //         memberName: [{}],
+    //         ageGroup: [{}],
+    //         crewType: [{}],
+    //         createdAt: [{}],
+    //         updatedAt: [{}],
+    //         __v: [{}],
+    //     }
+    // }
+    // componentDidMount() {
+    //     fetch(GET)
+    //         .then(response => {
+    //             return response.json();
+    //         })
+    //         .then(d => {
+    //             this.setState({ clubName: d });
+    //             console.log(this.state.clubName);
+    //         })
+    // }
+
     render() {
         return (
             <>
