@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'CrewPlus'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_66C3B11AF4FA47AF8D70D2E43D811CFC }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9F2CCC35AA644AE484BAEC1F3203A327 }}
           package: .
