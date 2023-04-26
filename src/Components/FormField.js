@@ -10,7 +10,7 @@ class FormField extends Component {
                         <label className='subtitle1'>{this.props.label}</label>
                         <label className='subtitle2 subText'>{this.props.subtext}</label>
                     </div>
-                    <input type={this.props.type} className='input' />
+                    <input type={this.props.type} placeholder={this.props.placeholder} className='input' />
                 </form>
             </>
         );
