@@ -3,6 +3,9 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import LinkButtonBlack from '../Components/LinkButtonBlack';
 import "./ClubMembers.css";
+import clubMemberData from "../Assets/content/club.json";
+
+console.log(clubMemberData.carnlough[1].member);
 
 const onViewMemberButtonClick = () => {
     const link = "/member-account";
@@ -85,6 +88,65 @@ class ClubMembers extends Component {
                 </div>
                 <div className='content-container'>
                     <h1 className='h2'>Club members</h1>
+                    <div className='club-table-container'>
+                        <table>
+                            <LinkButtonBlack
+                                text="+ Add member"
+                                onClick={onAddMemberButtonClick}
+                            />
+                            <tbody>
+                                <tr className='table-header'>
+                                    <th>Rower name</th>
+                                    <th>Age group</th>
+                                    <th>Crew type</th>
+                                </tr>
+                                <tr>
+                                    <td>{clubMemberData.carnlough[1].member[0].memberName}</td>
+                                    <td>{clubMemberData.carnlough[1].member[0].ageGroup}</td>
+                                    <td>{clubMemberData.carnlough[1].member[0].crewType}</td>
+                                    <td>
+                                        <LinkButtonBlack
+                                            text="View >"
+                                            onClick={onViewMemberButtonClick}
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>{clubMemberData.carnlough[1].member[1].memberName}</td>
+                                    <td>{clubMemberData.carnlough[1].member[1].ageGroup}</td>
+                                    <td>{clubMemberData.carnlough[1].member[1].crewType}</td>
+                                    <td>
+                                        <LinkButtonBlack
+                                            text="View >"
+                                            onClick={onViewMemberButtonClick}
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>{clubMemberData.carnlough[1].member[2].memberName}</td>
+                                    <td>{clubMemberData.carnlough[1].member[2].ageGroup}</td>
+                                    <td>{clubMemberData.carnlough[1].member[2].crewType}</td>
+                                    <td>
+                                        <LinkButtonBlack
+                                            text="View >"
+                                            onClick={onViewMemberButtonClick}
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>{clubMemberData.carnlough[1].member[3].memberName}</td>
+                                    <td>{clubMemberData.carnlough[1].member[3].ageGroup}</td>
+                                    <td>{clubMemberData.carnlough[1].member[3].crewType}</td>
+                                    <td>
+                                        <LinkButtonBlack
+                                            text="View >"
+                                            onClick={onViewMemberButtonClick}
+                                        />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div className='club-table-container'>
                         <table>
                             <LinkButtonBlack
