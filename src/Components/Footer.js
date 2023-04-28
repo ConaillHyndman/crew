@@ -16,7 +16,7 @@ class Footer extends Component {
     render() {
         return (
             <>
-                <div className='footer'>
+                <footer className='footer'>
                     <LinkButtonWhite
                         text="Home"
                         onClick={onHomeButtonClick}
@@ -28,7 +28,7 @@ class Footer extends Component {
                         onClick={onSiteInfoButtonClick}
                         className="logOutButton"
                     />
-                </div>
+                </footer>
             </>
         );
     }

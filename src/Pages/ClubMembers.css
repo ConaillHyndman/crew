@@ -19,6 +19,12 @@ td {
     padding: 10px 5px;
 }
 
+.addMemberCell {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
 .club-table-container {
     display: flex;
     justify-content: center;

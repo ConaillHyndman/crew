@@ -100,7 +100,7 @@ class ClubMembers extends Component {
                         <table>
                             <tbody>
                                 <tr>
-                                    <td>
+                                    <td className='addMemberCell'>
                                         <LinkButtonBlack
                                             text="+ Add member"
                                             onClick={onAddMemberButtonClick}

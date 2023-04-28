@@ -17,7 +17,7 @@ class header extends Component {
     render() {
         return (
             <>
-                <div className='header'>
+                <nav className='header'>
                     <img
                         className="logo-button"
                         src={logoImage}
@@ -29,7 +29,7 @@ class header extends Component {
                         onClick={onLogOutButtonClick}
                         className="logOutButton"
                     />
-                </div>
+                </nav>
             </>
         );
     }
