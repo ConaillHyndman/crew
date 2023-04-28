@@ -3,9 +3,13 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import PrimaryButton from '../Components/PrimaryButton';
 import LinkButtonBlack from '../Components/LinkButtonBlack';
+import clubMemberData from '../Assets/content/club.json'
+
+let arrayPath = clubMemberData.clubs.map((i) => i.path);
 
 const onSaveMemberInfoButtonClick = () => {
-    const link = "/member-account";
+    // const link = "/member-account" + arrayPath[0] || arrayPath[2];
+    const link = "/member-account" + arrayPath[0] || arrayPath[2];
     window.location.assign(link);
 };
 

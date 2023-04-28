@@ -3,9 +3,12 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import PrimaryButton from '../Components/PrimaryButton';
 import LinkButtonBlack from '../Components/LinkButtonBlack';
+import clubMemberData from '../Assets/content/club.json'
+
+let arrayPath = clubMemberData.clubs.map((i) => i.path);
 
 const onAddMemberInfoButtonClick = () => {
-    const link = "/add-info";
+    const link = "/add-info" + arrayPath[0] || arrayPath[2];
     window.location.assign(link);
 };
 

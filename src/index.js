@@ -14,6 +14,17 @@ import MemberAccount from './Pages/MemberAccount';
 import AddMember from './Pages/AddMember';
 import AddInfo from './Pages/AddInfo';
 import ComponentLibrary from './Pages/ComponentLibrary';
+import clubMemberData from "./Assets/content/club.json";
+
+// for (let i = 0; i < clubMemberData.clubs.length; i++) {
+//   let arrayPath = clubMemberData.clubs[i].path;
+//   console.log(arrayPath);
+// }
+
+let arrayPath = clubMemberData.clubs.map((i) => i.path);
+// console.log(arrayPath);
+// console.log(arrayPath[0]);
+// console.log(arrayPath[2]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,13 +34,19 @@ root.render(
       <Route index element={<Home />} />
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<Signup />} />
-      <Route path='/crew-lists' element={<CrewLists />} />
-      <Route path='/my-club' element={<MyClub />} />
+      <Route path={`/crew-lists` + arrayPath[0]} element={<CrewLists />} />
+      <Route path={`/crew-lists` + arrayPath[2]} element={<CrewLists />} />
+      <Route path={`/my-club` + arrayPath[0]} element={<MyClub />} />
+      <Route path={`/my-club` + arrayPath[2]} element={<MyClub />} />
       <Route path='/site-information' element={<SiteInfo />} />
-      <Route path='/club-members' element={<ClubMembers />} />
-      <Route path='/member-account' element={<MemberAccount />} />
-      <Route path='/add-member' element={<AddMember />} />
-      <Route path='/add-info' element={<AddInfo />} />
+      <Route path={`/club-members` + arrayPath[0]} element={<ClubMembers />} />
+      <Route path={`/club-members` + arrayPath[2]} element={<ClubMembers />} />
+      <Route path={`/member-account` + arrayPath[0]} element={<MemberAccount />} />
+      <Route path={`/member-account` + arrayPath[2]} element={<MemberAccount />} />
+      <Route path={`/add-member` + arrayPath[0]} element={<AddMember />} />
+      <Route path={`/add-member` + arrayPath[2]} element={<AddMember />} />
+      <Route path={`/add-info` + arrayPath[0]} element={<AddInfo />} />
+      <Route path={`/add-info` + arrayPath[2]} element={<AddInfo />} />
       <Route path='/component-library' element={<ComponentLibrary />} />
     </Routes>
   </BrowserRouter>

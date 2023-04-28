@@ -2,6 +2,10 @@
     background-color: var(--dark);
 }
 
+table {
+    width: 100%;
+}
+
 th {
     color: white;
 }

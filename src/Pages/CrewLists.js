@@ -3,6 +3,35 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import LinkButtonBlack from '../Components/LinkButtonBlack';
 import './CrewLists.css'
+import clubMemberData from "../Assets/content/club.json";
+
+function renderList() {
+    if (window.location.pathname === "/crew-lists/carnlough") {
+        return clubMemberData.clubs[1].member
+    } else {
+        return clubMemberData.clubs[3].member
+    }
+}
+
+// function renderList2() {
+//     if (window.location.pathname === "/crew-lists/carnlough") {
+//         let test = clubMemberData.clubs[1].member.map((i) => i.crewType)
+//         console.log(test.map((i) => i[7]));
+//         console.log(test);
+//         if (test.map((i) => i)[7] ? '2' : null) {
+//             console.log("yep");
+//             console.log(clubMemberData.clubs[1].member.map((i) => i.memberName));
+//             // console.log(clubMemberData.clubs[1].member.map((i) => i.crewType));
+//         } else {
+//             console.log("nope");
+//         }
+//     } else {
+//         console.log("invalid path");
+//         return clubMemberData.clubs[3].member
+//     }
+// }
+
+// renderList2();
 
 const onBackButtonClick = () => {
     window.history.back();
@@ -21,6 +50,71 @@ class CrewLists extends Component {
                 </div>
                 <div className='content-container'>
                     <h1 className='h2'>Crew lists</h1>
+                    {/*  */}
+
+                    {/* <div className='club-table-container'>
+                        <table>
+                            <tbody>
+                                <tr className='table-header'>
+                                    <th>Rower name</th>
+                                    <th>Age group</th>
+                                    <th>Crew type</th>
+                                </tr>
+                                <tr>
+                                    <td>{renderList()[0].memberName}</td>
+                                    <td>{renderList()[0].ageGroup}</td>
+                                    <td>{renderList()[0].crewType}</td>
+                                </tr>
+                                <tr>
+                                    <td>{renderList()[1].memberName}</td>
+                                    <td>{renderList()[1].ageGroup}</td>
+                                    <td>{renderList()[1].crewType}</td>
+                                </tr>
+                                <tr>
+                                    <td>{renderList()[2].memberName}</td>
+                                    <td>{renderList()[2].ageGroup}</td>
+                                    <td>{renderList()[2].crewType}</td>
+                                </tr>
+                                <tr>
+                                    <td>{renderList()[3].memberName}</td>
+                                    <td>{renderList()[3].ageGroup}</td>
+                                    <td>{renderList()[3].crewType}</td>
+                                </tr>
+                                <tr>
+                                    <td>{renderList()[4].memberName}</td>
+                                    <td>{renderList()[4].ageGroup}</td>
+                                    <td>{renderList()[4].crewType}</td>
+                                </tr>
+                                <tr>
+                                    <td>{renderList()[5].memberName}</td>
+                                    <td>{renderList()[5].ageGroup}</td>
+                                    <td>{renderList()[5].crewType}</td>
+                                </tr>
+                                <tr>
+                                    <td>{renderList()[6].memberName}</td>
+                                    <td>{renderList()[6].ageGroup}</td>
+                                    <td>{renderList()[6].crewType}</td>
+                                </tr>
+                                <tr>
+                                    <td>{renderList()[7].memberName}</td>
+                                    <td>{renderList()[7].ageGroup}</td>
+                                    <td>{renderList()[7].crewType}</td>
+                                </tr>
+                                <tr>
+                                    <td>{renderList()[8].memberName}</td>
+                                    <td>{renderList()[8].ageGroup}</td>
+                                    <td>{renderList()[8].crewType}</td>
+                                </tr>
+                                <tr>
+                                    <td>{renderList()[9].memberName}</td>
+                                    <td>{renderList()[9].ageGroup}</td>
+                                    <td>{renderList()[9].crewType}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> */}
+
+                    {/*  */}
                     <div className='row-1'>
                         <div className='crews-table-container'>
                             <table>
@@ -31,34 +125,9 @@ class CrewLists extends Component {
                                         <th>Crew type</th>
                                     </tr>
                                     <tr>
-                                        <td>John Smith</td>
-                                        <td>Under 12s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Christopher Robin</td>
-                                        <td>Under 12s</td>
-                                        <td>Males</td>
-                                    </tr>
-                                    <tr>
-                                        <td>James Bond</td>
-                                        <td>Under 12s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>David Rose</td>
-                                        <td>Under 12s</td>
-                                        <td>Males</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Joey Tribiani</td>
-                                        <td>Under 12s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Phoebe Buffey</td>
-                                        <td>Under 12s</td>
-                                        <td>Females</td>
+                                        <td>{renderList()[4].memberName}</td>
+                                        <td>{renderList()[4].ageGroup}</td>
+                                        <td>{renderList()[4].crewType}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -72,34 +141,9 @@ class CrewLists extends Component {
                                         <th>Crew type</th>
                                     </tr>
                                     <tr>
-                                        <td>John Smith</td>
-                                        <td>Under 14s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Christopher Robin</td>
-                                        <td>Under 14s</td>
-                                        <td>Males</td>
-                                    </tr>
-                                    <tr>
-                                        <td>James Bond</td>
-                                        <td>Under 14s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>David Rose</td>
-                                        <td>Under 14s</td>
-                                        <td>Males</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Joey Tribiani</td>
-                                        <td>Under 14s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Phoebe Buffey</td>
-                                        <td>Under 14s</td>
-                                        <td>Females</td>
+                                        <td>{renderList()[5].memberName}</td>
+                                        <td>{renderList()[5].ageGroup}</td>
+                                        <td>{renderList()[5].crewType}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -115,34 +159,9 @@ class CrewLists extends Component {
                                         <th>Crew type</th>
                                     </tr>
                                     <tr>
-                                        <td>John Smith</td>
-                                        <td>Under 16s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Christopher Robin</td>
-                                        <td>Under 16s</td>
-                                        <td>Males</td>
-                                    </tr>
-                                    <tr>
-                                        <td>James Bond</td>
-                                        <td>Under 16s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>David Rose</td>
-                                        <td>Under 16s</td>
-                                        <td>Males</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Joey Tribiani</td>
-                                        <td>Under 16s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Phoebe Buffey</td>
-                                        <td>Under 16s</td>
-                                        <td>Females</td>
+                                        <td>{renderList()[6].memberName}</td>
+                                        <td>{renderList()[6].ageGroup}</td>
+                                        <td>{renderList()[6].crewType}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -156,34 +175,9 @@ class CrewLists extends Component {
                                         <th>Crew type</th>
                                     </tr>
                                     <tr>
-                                        <td>John Smith</td>
-                                        <td>Under 18s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Christopher Robin</td>
-                                        <td>Under 18s</td>
-                                        <td>Males</td>
-                                    </tr>
-                                    <tr>
-                                        <td>James Bond</td>
-                                        <td>Under 18s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>David Rose</td>
-                                        <td>Under 18s</td>
-                                        <td>Males</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Joey Tribiani</td>
-                                        <td>Under 18s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Phoebe Buffey</td>
-                                        <td>Under 18s</td>
-                                        <td>Females</td>
+                                        <td>{renderList()[7].memberName}</td>
+                                        <td>{renderList()[7].ageGroup}</td>
+                                        <td>{renderList()[7].crewType}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -199,34 +193,9 @@ class CrewLists extends Component {
                                         <th>Crew type</th>
                                     </tr>
                                     <tr>
-                                        <td>John Smith</td>
-                                        <td>Under 21s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Christopher Robin</td>
-                                        <td>Under 21s</td>
-                                        <td>Males</td>
-                                    </tr>
-                                    <tr>
-                                        <td>James Bond</td>
-                                        <td>Under 21s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>David Rose</td>
-                                        <td>Under 21s</td>
-                                        <td>Males</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Joey Tribiani</td>
-                                        <td>Under 21s</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Phoebe Buffey</td>
-                                        <td>Under 21s</td>
-                                        <td>Females</td>
+                                        <td>{renderList()[8].memberName}</td>
+                                        <td>{renderList()[8].ageGroup}</td>
+                                        <td>{renderList()[8].crewType}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -240,34 +209,29 @@ class CrewLists extends Component {
                                         <th>Crew type</th>
                                     </tr>
                                     <tr>
-                                        <td>John Smith</td>
-                                        <td>Veterans</td>
-                                        <td>Mixed</td>
+                                        <td>{renderList()[0].memberName}</td>
+                                        <td>{renderList()[0].ageGroup}</td>
+                                        <td>{renderList()[0].crewType}</td>
                                     </tr>
                                     <tr>
-                                        <td>Christopher Robin</td>
-                                        <td>Veterans</td>
-                                        <td>Males</td>
+                                        <td>{renderList()[1].memberName}</td>
+                                        <td>{renderList()[1].ageGroup}</td>
+                                        <td>{renderList()[1].crewType}</td>
                                     </tr>
                                     <tr>
-                                        <td>James Bond</td>
-                                        <td>Veterans</td>
-                                        <td>Mixed</td>
+                                        <td>{renderList()[2].memberName}</td>
+                                        <td>{renderList()[2].ageGroup}</td>
+                                        <td>{renderList()[2].crewType}</td>
                                     </tr>
                                     <tr>
-                                        <td>David Rose</td>
-                                        <td>Veterans</td>
-                                        <td>Males</td>
+                                        <td>{renderList()[3].memberName}</td>
+                                        <td>{renderList()[3].ageGroup}</td>
+                                        <td>{renderList()[3].crewType}</td>
                                     </tr>
                                     <tr>
-                                        <td>Joey Tribiani</td>
-                                        <td>Veterans</td>
-                                        <td>Mixed</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Phoebe Buffey</td>
-                                        <td>Veterans</td>
-                                        <td>Females</td>
+                                        <td>{renderList()[9].memberName}</td>
+                                        <td>{renderList()[9].ageGroup}</td>
+                                        <td>{renderList()[9].crewType}</td>
                                     </tr>
                                 </tbody>
                             </table>

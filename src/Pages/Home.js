@@ -3,14 +3,17 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import PrimaryButton from '../Components/PrimaryButton';
 import "./Home.css"
+import clubMemberData from '../Assets/content/club.json'
+
+let arrayPath = clubMemberData.clubs.map((i) => i.path);
 
 const onCrewListButtonClick = () => {
-    const link = "/crew-lists";
+    const link = '/crew-lists' + arrayPath[0] || arrayPath[2];
     window.location.assign(link);
 };
 
 const onMyClubButtonClick = () => {
-    const link = "/my-club";
+    const link = '/my-club' + arrayPath[0] || arrayPath[2];
     window.location.assign(link);
 };
 

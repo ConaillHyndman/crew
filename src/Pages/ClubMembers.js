@@ -3,12 +3,12 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import LinkButtonBlack from '../Components/LinkButtonBlack';
 import "./ClubMembers.css";
-import clubMemberData from "../Assets/content/club.json";
+import clubMemberData from '../Assets/content/club.json'
 
-console.log(clubMemberData.carnlough[1].member);
+let arrayPath = clubMemberData.clubs.map((i) => i.path);
 
 const onViewMemberButtonClick = () => {
-    const link = "/member-account";
+    const link = "/member-account" + arrayPath[0] || arrayPath[2];
     window.location.assign(link);
 };
 
@@ -17,9 +17,17 @@ const onBackButtonClick = () => {
 };
 
 const onAddMemberButtonClick = () => {
-    const link = "/add-member";
+    const link = "/add-member" + arrayPath[0] || arrayPath[2];
     window.location.assign(link);
 };
+
+function renderList() {
+    if (window.location.pathname === "/club-members/carnlough") {
+        return clubMemberData.clubs[1].member
+    } else {
+        return clubMemberData.clubs[3].member
+    }
+}
 
 // const GET = fetch("http://localhost:3001/club-members/6443cccaa8ffe74b4a9a1e36", { mode: 'no-cors' });
 // const GET = "http://localhost:3001/club-members/6443cccaa8ffe74b4a9a1e36";
@@ -101,9 +109,9 @@ class ClubMembers extends Component {
                                     <th>Crew type</th>
                                 </tr>
                                 <tr>
-                                    <td>{clubMemberData.carnlough[1].member[0].memberName}</td>
-                                    <td>{clubMemberData.carnlough[1].member[0].ageGroup}</td>
-                                    <td>{clubMemberData.carnlough[1].member[0].crewType}</td>
+                                    <td>{renderList()[0].memberName}</td>
+                                    <td>{renderList()[0].ageGroup}</td>
+                                    <td>{renderList()[0].crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -112,9 +120,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>{clubMemberData.carnlough[1].member[1].memberName}</td>
-                                    <td>{clubMemberData.carnlough[1].member[1].ageGroup}</td>
-                                    <td>{clubMemberData.carnlough[1].member[1].crewType}</td>
+                                    <td>{renderList()[1].memberName}</td>
+                                    <td>{renderList()[1].ageGroup}</td>
+                                    <td>{renderList()[1].crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -123,9 +131,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>{clubMemberData.carnlough[1].member[2].memberName}</td>
-                                    <td>{clubMemberData.carnlough[1].member[2].ageGroup}</td>
-                                    <td>{clubMemberData.carnlough[1].member[2].crewType}</td>
+                                    <td>{renderList()[2].memberName}</td>
+                                    <td>{renderList()[2].ageGroup}</td>
+                                    <td>{renderList()[2].crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -134,35 +142,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>{clubMemberData.carnlough[1].member[3].memberName}</td>
-                                    <td>{clubMemberData.carnlough[1].member[3].ageGroup}</td>
-                                    <td>{clubMemberData.carnlough[1].member[3].crewType}</td>
-                                    <td>
-                                        <LinkButtonBlack
-                                            text="View >"
-                                            onClick={onViewMemberButtonClick}
-                                        />
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div className='club-table-container'>
-                        <table>
-                            <LinkButtonBlack
-                                text="+ Add member"
-                                onClick={onAddMemberButtonClick}
-                            />
-                            <tbody>
-                                <tr className='table-header'>
-                                    <th>Rower name</th>
-                                    <th>Age group</th>
-                                    <th>Crew type</th>
-                                </tr>
-                                <tr>
-                                    <td>John Smith</td>
-                                    <td>Under 12s</td>
-                                    <td>Mixed</td>
+                                    <td>{renderList()[3].memberName}</td>
+                                    <td>{renderList()[3].ageGroup}</td>
+                                    <td>{renderList()[3].crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -171,9 +153,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Christopher Robin</td>
-                                    <td>Under 14s</td>
-                                    <td>Males</td>
+                                    <td>{renderList()[4].memberName}</td>
+                                    <td>{renderList()[4].ageGroup}</td>
+                                    <td>{renderList()[4].crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -182,9 +164,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>James Bond</td>
-                                    <td>Under 16s</td>
-                                    <td>Mixed</td>
+                                    <td>{renderList()[5].memberName}</td>
+                                    <td>{renderList()[5].ageGroup}</td>
+                                    <td>{renderList()[5].crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -193,9 +175,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>David Rose</td>
-                                    <td>Under 18s</td>
-                                    <td>Males</td>
+                                    <td>{renderList()[6].memberName}</td>
+                                    <td>{renderList()[6].ageGroup}</td>
+                                    <td>{renderList()[6].crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -204,9 +186,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Joey Tribiani</td>
-                                    <td>Under 21s</td>
-                                    <td>Mixed</td>
+                                    <td>{renderList()[7].memberName}</td>
+                                    <td>{renderList()[7].ageGroup}</td>
+                                    <td>{renderList()[7].crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -215,9 +197,20 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Phoebe Buffey</td>
-                                    <td>Veterans</td>
-                                    <td>Females</td>
+                                    <td>{renderList()[8].memberName}</td>
+                                    <td>{renderList()[8].ageGroup}</td>
+                                    <td>{renderList()[8].crewType}</td>
+                                    <td>
+                                        <LinkButtonBlack
+                                            text="View >"
+                                            onClick={onViewMemberButtonClick}
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>{renderList()[9].memberName}</td>
+                                    <td>{renderList()[9].ageGroup}</td>
+                                    <td>{renderList()[9].crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
