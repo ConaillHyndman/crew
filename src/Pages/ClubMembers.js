@@ -98,11 +98,15 @@ class ClubMembers extends Component {
                     <h1 className='h2'>Club members</h1>
                     <div className='club-table-container'>
                         <table>
-                            <LinkButtonBlack
-                                text="+ Add member"
-                                onClick={onAddMemberButtonClick}
-                            />
                             <tbody>
+                                <tr>
+                                    <td>
+                                        <LinkButtonBlack
+                                            text="+ Add member"
+                                            onClick={onAddMemberButtonClick}
+                                        />
+                                    </td>
+                                </tr>
                                 <tr className='table-header'>
                                     <th>Rower name</th>
                                     <th>Age group</th>

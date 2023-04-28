@@ -8,7 +8,6 @@ import clubMemberData from '../Assets/content/club.json'
 let arrayPath = clubMemberData.clubs.map((i) => i.path);
 let clubInfo = clubMemberData.clubs.map((i) => i);
 
-console.log(clubInfo[0].clubName);
 function clubInfoData() {
     if (window.location.pathname === "/my-club/carnlough") {
         return clubInfo[0].clubName;
