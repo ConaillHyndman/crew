@@ -5,10 +5,10 @@ import LinkButtonBlack from '../Components/LinkButtonBlack';
 import "./ClubMembers.css";
 import clubMemberData from '../Assets/content/club.json'
 
-let arrayPath = clubMemberData.clubs.map((i) => i.path);
+let arrayPath = clubMemberData.clubs[0].carnlough[0].path || clubMemberData.clubs[0].cairndhu[0].path;
 
 const onViewMemberButtonClick = () => {
-    const link = "/member-account" + arrayPath[0] || arrayPath[2];
+    const link = "/member-account" + arrayPath;
     window.location.assign(link);
 };
 
@@ -17,15 +17,16 @@ const onBackButtonClick = () => {
 };
 
 const onAddMemberButtonClick = () => {
-    const link = "/add-member" + arrayPath[0] || arrayPath[2];
+    const link = "/add-member" + arrayPath;
     window.location.assign(link);
 };
 
 function renderList() {
     if (window.location.pathname === "/club-members/carnlough") {
-        return clubMemberData.clubs[1].member
+        // return clubMemberData.clubs[1].member
+        return clubMemberData.clubs[0].carnlough[0].member[0]
     } else {
-        return clubMemberData.clubs[3].member
+        return clubMemberData.clubs[0].carnlough[0].member[0]
     }
 }
 
@@ -113,9 +114,9 @@ class ClubMembers extends Component {
                                     <th>Crew type</th>
                                 </tr>
                                 <tr>
-                                    <td>{renderList()[0].memberName}</td>
-                                    <td>{renderList()[0].ageGroup}</td>
-                                    <td>{renderList()[0].crewType}</td>
+                                    <td>{renderList().memberName}</td>
+                                    <td>{renderList().ageGroup}</td>
+                                    <td>{renderList().crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -124,9 +125,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>{renderList()[1].memberName}</td>
-                                    <td>{renderList()[1].ageGroup}</td>
-                                    <td>{renderList()[1].crewType}</td>
+                                    <td>{renderList().memberName}</td>
+                                    <td>{renderList().ageGroup}</td>
+                                    <td>{renderList().crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -135,9 +136,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>{renderList()[2].memberName}</td>
-                                    <td>{renderList()[2].ageGroup}</td>
-                                    <td>{renderList()[2].crewType}</td>
+                                    <td>{renderList().memberName}</td>
+                                    <td>{renderList().ageGroup}</td>
+                                    <td>{renderList().crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -146,9 +147,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>{renderList()[3].memberName}</td>
-                                    <td>{renderList()[3].ageGroup}</td>
-                                    <td>{renderList()[3].crewType}</td>
+                                    <td>{renderList().memberName}</td>
+                                    <td>{renderList().ageGroup}</td>
+                                    <td>{renderList().crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -157,9 +158,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>{renderList()[4].memberName}</td>
-                                    <td>{renderList()[4].ageGroup}</td>
-                                    <td>{renderList()[4].crewType}</td>
+                                    <td>{renderList().memberName}</td>
+                                    <td>{renderList().ageGroup}</td>
+                                    <td>{renderList().crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -168,9 +169,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>{renderList()[5].memberName}</td>
-                                    <td>{renderList()[5].ageGroup}</td>
-                                    <td>{renderList()[5].crewType}</td>
+                                    <td>{renderList().memberName}</td>
+                                    <td>{renderList().ageGroup}</td>
+                                    <td>{renderList().crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -179,9 +180,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>{renderList()[6].memberName}</td>
-                                    <td>{renderList()[6].ageGroup}</td>
-                                    <td>{renderList()[6].crewType}</td>
+                                    <td>{renderList().memberName}</td>
+                                    <td>{renderList().ageGroup}</td>
+                                    <td>{renderList().crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -190,9 +191,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>{renderList()[7].memberName}</td>
-                                    <td>{renderList()[7].ageGroup}</td>
-                                    <td>{renderList()[7].crewType}</td>
+                                    <td>{renderList().memberName}</td>
+                                    <td>{renderList().ageGroup}</td>
+                                    <td>{renderList().crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -201,9 +202,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>{renderList()[8].memberName}</td>
-                                    <td>{renderList()[8].ageGroup}</td>
-                                    <td>{renderList()[8].crewType}</td>
+                                    <td>{renderList().memberName}</td>
+                                    <td>{renderList().ageGroup}</td>
+                                    <td>{renderList().crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
@@ -212,9 +213,9 @@ class ClubMembers extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>{renderList()[9].memberName}</td>
-                                    <td>{renderList()[9].ageGroup}</td>
-                                    <td>{renderList()[9].crewType}</td>
+                                    <td>{renderList().memberName}</td>
+                                    <td>{renderList().ageGroup}</td>
+                                    <td>{renderList().crewType}</td>
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"

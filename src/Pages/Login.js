@@ -6,6 +6,9 @@ import LinkButtonWhite from '../Components/LinkButtonWhite';
 import LinkButtonBlack from '../Components/LinkButtonBlack';
 import FormField from '../Components/FormField';
 import PrimaryButton from '../Components/PrimaryButton';
+import siteContent from "../Assets/content/site.json";
+
+const loginContent = siteContent.site[0].login[0];
 
 const onSiteInfoClick = () => {
     const link = "/site-information";
@@ -40,9 +43,7 @@ class Login extends Component {
                 </div>
                 <div className='right-container'>
                     <div className='logincontent-container'>
-                        <h1 className='h2'>
-                            Login
-                        </h1>
+                        <h1 className='h2'>{loginContent.pageTitle}</h1>
                         <div className='loginForm'>
                             <FormField
                                 label="Username"
@@ -64,9 +65,7 @@ class Login extends Component {
                                 />
                             </div>
                             <div className='signupLink'>
-                                <p>
-                                    Not a member yet?
-                                </p>
+                                <p>{loginContent.signUpContent}</p>
                                 <LinkButtonBlack
                                     text="Join the team"
                                     onClick={onJoinButtonClick}

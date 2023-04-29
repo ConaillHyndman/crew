@@ -1,7 +1,37 @@
 {
     "site": [
         {
-            "homeTitle": "Home"
+            "login": [
+                {
+                    "pageTitle": "Login",
+                    "signUpContent": "Not a member yet?"
+                }
+            ],
+            "signup": [
+                {
+                    "pageTitle": "Join the team"
+                }
+            ],
+            "home": [
+                {
+                    "pageTitle": "Home",
+                    "crewsCardTitle": "Crews",
+                    "crewsCardInfo": "View the suggested crew lists from your clubs data!",
+                    "clubCardTitle": "My club",
+                    "clubCardInfo": "View your club information and it's members"
+                }
+            ],
+            "siteInfo": [
+                {
+                    "pageTitle": "Site information",
+                    "siteImages": "Artify Illustrations. Part of Creative Toolkit entertainment section Figma plugin."
+                }
+            ],
+            "crewLists": [
+                {
+                    "pageTitle": "Crew lists"
+                }
+            ]
         }
     ]
 }

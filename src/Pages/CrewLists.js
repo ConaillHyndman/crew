@@ -7,27 +7,26 @@ import clubMemberData from "../Assets/content/club.json";
 
 function renderList() {
     if (window.location.pathname === "/crew-lists/carnlough") {
-        return clubMemberData.clubs[1].member
+        return clubMemberData.clubs[0].carnlough[0].member
     } else {
-        return clubMemberData.clubs[3].member
+        return clubMemberData.clubs[0].cairndhu[0].member
     }
 }
 
 // function renderList2() {
 //     if (window.location.pathname === "/crew-lists/carnlough") {
-//         let test = clubMemberData.clubs[1].member.map((i) => i.crewType)
+//         let test = clubMemberData.clubs[0].carnlough[0].member.map((i) => i.ageGroup)
 //         console.log(test.map((i) => i[7]));
 //         console.log(test);
 //         if (test.map((i) => i)[7] ? '2' : null) {
 //             console.log("yep");
-//             console.log(clubMemberData.clubs[1].member.map((i) => i.memberName));
-//             // console.log(clubMemberData.clubs[1].member.map((i) => i.crewType));
+//             console.log(clubMemberData.clubs[0].carnlough[0].member.map((i) => i.memberName));
 //         } else {
 //             console.log("nope");
 //         }
 //     } else {
 //         console.log("invalid path");
-//         return clubMemberData.clubs[3].member
+//         return clubMemberData.clubs[0].cairndhu[0].member
 //     }
 // }
 

@@ -5,6 +5,9 @@ import logoImage from "../Assets/images/Logo.svg";
 import LinkButtonWhite from '../Components/LinkButtonWhite';
 import FormField from '../Components/FormField';
 import PrimaryButton from '../Components/PrimaryButton';
+import siteContent from "../Assets/content/site.json";
+
+const signUpContent = siteContent.site[0].signup[0];
 
 const onSiteInfoClick = () => {
     const link = "/site-information";
@@ -34,9 +37,7 @@ class Signup extends Component {
                 </div>
                 <div className='right-container'>
                     <div className='signupcontent-container'>
-                        <h1 className='h2'>
-                            Join the team
-                        </h1>
+                        <h1 className='h2'>{signUpContent.pageTitle}</h1>
                         <div className='signupForm'>
                             <FormField
                                 label="Email"

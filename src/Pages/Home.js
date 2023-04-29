@@ -4,16 +4,19 @@ import Footer from '../Components/Footer';
 import PrimaryButton from '../Components/PrimaryButton';
 import "./Home.css"
 import clubMemberData from '../Assets/content/club.json'
+import siteContent from "../Assets/content/site.json";
 
-let arrayPath = clubMemberData.clubs.map((i) => i.path);
+const homeContent = siteContent.site[0].home[0];
+
+let arrayPath = clubMemberData.clubs[0].carnlough[0].path || clubMemberData.clubs[0].cairndhu[0].path;
 
 const onCrewListButtonClick = () => {
-    const link = '/crew-lists' + arrayPath[0] || arrayPath[2];
+    const link = '/crew-lists' + arrayPath;
     window.location.assign(link);
 };
 
 const onMyClubButtonClick = () => {
-    const link = '/my-club' + arrayPath[0] || arrayPath[2];
+    const link = '/my-club' + arrayPath;
     window.location.assign(link);
 };
 
@@ -23,19 +26,19 @@ class Home extends Component {
             <>
                 <Header />
                 <div className='home-content-container'>
-                    <h1 className='h2'>Home</h1>
+                    <h1 className='h2'>{homeContent.pageTitle}</h1>
                     <div className='cards-container'>
                         <div className="homepage-cards">
-                            <p className='h3 card-header'>Crews</p>
-                            <p>View the suggested crew lists from your clubs data!</p>
+                            <p className='h3 card-header'>{homeContent.crewsCardTitle}</p>
+                            <p>{homeContent.crewsCardInfo}</p>
                             <PrimaryButton
                                 text="View crew lists"
                                 onClick={onCrewListButtonClick}
                             />
                         </div>
                         <div className="homepage-cards">
-                            <p className='h3 card-header'>My club</p>
-                            <p>View your club information and it's members</p>
+                            <p className='h3 card-header'>{homeContent.clubCardTitle}</p>
+                            <p>{homeContent.clubCardInfo}</p>
                             <PrimaryButton
                                 text="View my club"
                                 onClick={onMyClubButtonClick}

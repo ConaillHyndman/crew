@@ -5,11 +5,11 @@ import PrimaryButton from '../Components/PrimaryButton';
 import LinkButtonBlack from '../Components/LinkButtonBlack';
 import clubMemberData from '../Assets/content/club.json'
 
-let arrayPath = clubMemberData.clubs.map((i) => i.path);
+let arrayPath = clubMemberData.clubs[0].carnlough[0].path || clubMemberData.clubs[0].cairndhu[0].path;
 
 const onSaveMemberInfoButtonClick = () => {
-    // const link = "/member-account" + arrayPath[0] || arrayPath[2];
-    const link = "/member-account" + arrayPath[0] || arrayPath[2];
+    // const link = "/member-account" + arrayPath;
+    const link = "/member-account" + arrayPath;
     window.location.assign(link);
 };
 
