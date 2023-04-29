@@ -24,7 +24,6 @@ const onAddMemberButtonClick = () => {
 
 function renderList() {
     if (window.location.pathname === "/club-members/carnlough") {
-        // return clubMemberData.clubs[1].member
         return clubMemberData.clubs[0].carnlough[0].member
     } else {
         return clubMemberData.clubs[0].cairndhu[0].member
