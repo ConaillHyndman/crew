@@ -8,15 +8,16 @@ import siteContent from "../Assets/content/site.json";
 
 const homeContent = siteContent.site[0].home[0];
 
-let arrayPath = clubMemberData.clubs[0].carnlough[0].path || clubMemberData.clubs[0].cairndhu[0].path;
+let carnloughPath = clubMemberData.clubs[0].carnlough[0].path;
+let cairndhuPath = clubMemberData.clubs[0].cairndhu[0].path;;
 
 const onCrewListButtonClick = () => {
-    const link = '/crew-lists' + arrayPath;
+    const link = '/crew-lists' + carnloughPath || cairndhuPath;
     window.location.assign(link);
 };
 
 const onMyClubButtonClick = () => {
-    const link = '/my-club' + arrayPath;
+    const link = '/my-club' + carnloughPath || cairndhuPath;
     window.location.assign(link);
 };
 

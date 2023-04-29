@@ -5,10 +5,11 @@ import PrimaryButton from '../Components/PrimaryButton';
 import LinkButtonBlack from '../Components/LinkButtonBlack';
 import clubMemberData from '../Assets/content/club.json'
 
-let arrayPath = clubMemberData.clubs[0].carnlough[0].path || clubMemberData.clubs[0].cairndhu[0].path;
+let carnloughPath = clubMemberData.clubs[0].carnlough[0].path;
+let cairndhuPath = clubMemberData.clubs[0].cairndhu[0].path;;
 
 const onAddMemberInfoButtonClick = () => {
-    const link = "/add-info" + arrayPath;
+    const link = "/add-info" + carnloughPath || cairndhuPath;
     window.location.assign(link);
 };
 

@@ -5,19 +5,20 @@ import PrimaryButton from '../Components/PrimaryButton';
 import LinkButtonBlack from '../Components/LinkButtonBlack';
 import clubMemberData from '../Assets/content/club.json'
 
-let arrayPath = clubMemberData.clubs[0].carnlough[0].path || clubMemberData.clubs[0].cairndhu[0].path;
-let clubInfo = clubMemberData.clubs[0].carnlough[0] || clubMemberData.clubs[0].cairndhu[0]
+let carnloughPath = clubMemberData.clubs[0].carnlough[0].path;
+let cairndhuPath = clubMemberData.clubs[0].cairndhu[0].path;
+let clubInfo = clubMemberData.clubs[0];
 
 function clubInfoData() {
     if (window.location.pathname === "/my-club/carnlough") {
-        return clubInfo.clubName;
+        return clubInfo.carnlough[0].clubName;
     } else {
-        return clubInfo.clubName;
+        return clubInfo.cairndhu[0].clubName;
     }
 }
 
 const onClubMembersButtonClick = () => {
-    const link = "/club-members" + arrayPath;
+    const link = "/club-members" + carnloughPath || cairndhuPath;
     window.location.assign(link);
 };
 
