@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const productSchema = mongoose.Schema(
+const memberSchema = mongoose.Schema(
     {
         clubName: {
             type: String,
@@ -11,7 +11,7 @@ const productSchema = mongoose.Schema(
             required: [true, "Please enter the crew name"]
         },
         ageGroup: {
-            type: Number,
+            type: String,
             required: [true, "Please enter the age group"]
         },
         crewType: {
@@ -24,6 +24,6 @@ const productSchema = mongoose.Schema(
     }
 )
 
-const ClubMember = mongoose.model('ClubMember', productSchema);
+const ClubMember = mongoose.model('ClubMember', memberSchema);
 
 module.exports = ClubMember;
