@@ -5,14 +5,14 @@ const app = express();
 
 app.use(express.json());
 
-const uri = "mongodb+srv://conaillhyndman:Cromlough14@crewpluscluster.iptdgiv.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://conaillhyndman:Cromlough14@crewpluscluster.iptdgiv.mongodb.net/club?retryWrites=true&w=majority";
 
 // delcare route
 app.get("/", (req, res) => {
     res.send("Response to client");
 });
 
-// Post data to test database to collection clubmembers
+// Post data to club database to collection clubmembers
 app.post("/add-club-member", async (req, res) => {
     try {
         const clubMember = await ClubMember.create(req.body);
@@ -22,7 +22,7 @@ app.post("/add-club-member", async (req, res) => {
     }
 });
 
-// Get data back from clubmembers collection in test database
+// Get data back from clubmembers collection in club database
 app.get("/club-members", async (req, res) => {
     try {
         const clubMembers = await ClubMember.find({});
@@ -32,7 +32,7 @@ app.get("/club-members", async (req, res) => {
     }
 });
 
-// Get specific data back from clubmembers collection in test database using member ID number
+// Get specific data back from clubmembers collection in club database using member ID number
 app.get("/club-members/:id", async (req, res) => {
     try {
         const { id } = req.params;
@@ -43,7 +43,7 @@ app.get("/club-members/:id", async (req, res) => {
     }
 })
 
-// Get more specific data back from clubmembers collection in test database using member ID number
+// Get more specific data back from clubmembers collection in club database using member ID number
 app.get("/club-members-data/:id", async (req, res) => {
     try {
         const { id } = req.params;
