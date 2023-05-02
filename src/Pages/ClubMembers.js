@@ -32,8 +32,11 @@ function renderList() {
 
 // const GET = fetch("http://localhost:3001/club-members/6443cccaa8ffe74b4a9a1e36", { mode: 'no-cors' });
 // const GET = "http://localhost:3001/club-members/6443cccaa8ffe74b4a9a1e36";
-// const data = GET.json;
-// console.log([data]);
+// const data = fetch(GET)
+// .then(response => {
+//     return response.json();
+// });
+// console.log([data])
 
 // const express = require('express');
 // const mongoose = require("mongoose");
