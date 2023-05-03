@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import CrewLists from './CrewLists';
 import clubMemberData from '../Assets/content/club.json'
 
-describe('My club test suite', () => {
+describe('Crew lists test suite', () => {
 
     function renderList() {
         if (window.location.pathname === "/club-members/carnlough") {
