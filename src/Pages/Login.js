@@ -16,7 +16,7 @@ const onSiteInfoClick = () => {
 };
 
 const onLoginButtonClick = () => {
-    const link = "/";
+    const link = "/carnlough";
     window.location.assign(link);
 };
 

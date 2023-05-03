@@ -12,70 +12,140 @@
                             "clubName": "Carnlough Rowing Club",
                             "memberName": "Matthew McGill",
                             "ageGroup": "Veterans",
-                            "crewType": "Males"
+                            "crewType": "Males",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "2",
                             "clubName": "Carnlough Rowing Club",
                             "memberName": "Conaill Hyndman",
                             "ageGroup": "Veterans",
-                            "crewType": "Males"
+                            "crewType": "Males",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "3",
                             "clubName": "Carnlough Rowing Club",
                             "memberName": "Clodagh Daly",
                             "ageGroup": "Veterans",
-                            "crewType": "Females"
+                            "crewType": "Females",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "4",
                             "clubName": "Carnlough Rowing Club",
                             "memberName": "Eoin Devine",
                             "ageGroup": "Veterans",
-                            "crewType": "Males"
+                            "crewType": "Males",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "5",
                             "clubName": "Carnlough Rowing Club",
                             "memberName": "John Smith",
                             "ageGroup": "Under 12s",
-                            "crewType": "Males"
+                            "crewType": "Males",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "6",
                             "clubName": "Carnlough Rowing Club",
                             "memberName": "Christopher Robin",
                             "ageGroup": "Under 14s",
-                            "crewType": "Males"
+                            "crewType": "Males",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "7",
                             "clubName": "Carnlough Rowing Club",
                             "memberName": "James Bond",
                             "ageGroup": "Under 16s",
-                            "crewType": "Males"
+                            "crewType": "Males",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "8",
                             "clubName": "Carnlough Rowing Club",
                             "memberName": "David Rose",
                             "ageGroup": "Under 18s",
-                            "crewType": "Males"
+                            "crewType": "Males",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "9",
                             "clubName": "Carnlough Rowing Club",
                             "memberName": "Joey Tribiani",
                             "ageGroup": "Under 21s",
-                            "crewType": "Males"
+                            "crewType": "Males",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "10",
                             "clubName": "Carnlough Rowing Club",
                             "memberName": "Phoebe Buffey",
                             "ageGroup": "Veterans",
-                            "crewType": "Females"
+                            "crewType": "Females",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         }
                     ]
                 }
@@ -91,70 +161,140 @@
                             "clubName": "Cairndhu Rowing Club",
                             "memberName": "Anita Hyndman",
                             "ageGroup": "Veterans",
-                            "crewType": "Females"
+                            "crewType": "Females",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "2",
                             "clubName": "Cairndhu Rowing Club",
                             "memberName": "Lynda McGill",
                             "ageGroup": "Veterans",
-                            "crewType": "Females"
+                            "crewType": "Females",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "3",
                             "clubName": "Cairndhu Rowing Club",
                             "memberName": "Pete Hyndman",
                             "ageGroup": "Veterans",
-                            "crewType": "Males"
+                            "crewType": "Males",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "4",
                             "clubName": "Cairndhu Rowing Club",
                             "memberName": "Desy McGill",
                             "ageGroup": "Veterans",
-                            "crewType": "Males"
+                            "crewType": "Males",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "5",
                             "clubName": "Cairndhu Rowing Club",
                             "memberName": "Rose Tyler",
                             "ageGroup": "Under 12s",
-                            "crewType": "Females"
+                            "crewType": "Females",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "6",
                             "clubName": "Cairndhu Rowing Club",
                             "memberName": "Donna Noble",
                             "ageGroup": "Under 14s",
-                            "crewType": "Females"
+                            "crewType": "Females",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "7",
                             "clubName": "Cairndhu Rowing Club",
                             "memberName": "Martha Jones",
                             "ageGroup": "Under 16s",
-                            "crewType": "Females"
+                            "crewType": "Females",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "8",
                             "clubName": "Cairndhu Rowing Club",
                             "memberName": "Jack Harkness",
                             "ageGroup": "Under 18s",
-                            "crewType": "Males"
+                            "crewType": "Males",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "9",
                             "clubName": "Cairndhu Rowing Club",
                             "memberName": "Brian Black",
                             "ageGroup": "Under 21s",
-                            "crewType": "Males"
+                            "crewType": "Males",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         },
                         {
                             "id": "10",
                             "clubName": "Cairndhu Rowing Club",
                             "memberName": "Harry Styles",
                             "ageGroup": "Veterans",
-                            "crewType": "Males"
+                            "crewType": "Males",
+                            "times": [
+                                "5 mins, ",
+                                "4.36 mins, ",
+                                "5 mins, ",
+                                "4.45 mins, ",
+                                "5.30 mins "
+                            ]
                         }
                     ]
                 }

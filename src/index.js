@@ -17,7 +17,10 @@ import ComponentLibrary from './Pages/ComponentLibrary';
 import clubMemberData from "./Assets/content/club.json";
 
 let carnloughPath = clubMemberData.clubs[0].carnlough[0].path;
-let cairndhuPath = clubMemberData.clubs[0].cairndhu[0].path;;
+let cairndhuPath = clubMemberData.clubs[0].cairndhu[0].path;
+
+let carnloughMemberPath = clubMemberData.clubs[0].carnlough[0].member.map((i) => i);
+let cairndhuMemberPath = clubMemberData.clubs[0].cairndhu[0].member.map((i) => i);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +28,8 @@ root.render(
     <Routes>
       <Route exact path='/' element={<Home />} />
       <Route index element={<Home />} />
+      <Route path='/carnlough' element={<Home />} />
+      <Route path='/cairndhu' element={<Home />} />
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<Signup />} />
       <Route path={`/crew-lists` + carnloughPath} element={<CrewLists />} />
@@ -36,6 +41,26 @@ root.render(
       <Route path={`/club-members` + cairndhuPath} element={<ClubMembers />} />
       <Route path={`/member-account` + carnloughPath} element={<MemberAccount />} />
       <Route path={`/member-account` + cairndhuPath} element={<MemberAccount />} />
+      <Route path={`/member-account` + carnloughPath + "/" + carnloughMemberPath[0].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + cairndhuPath + "/" + cairndhuMemberPath[0].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + carnloughPath + "/" + carnloughMemberPath[1].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + cairndhuPath + "/" + cairndhuMemberPath[1].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + carnloughPath + "/" + carnloughMemberPath[2].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + cairndhuPath + "/" + cairndhuMemberPath[2].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + carnloughPath + "/" + carnloughMemberPath[3].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + cairndhuPath + "/" + cairndhuMemberPath[3].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + carnloughPath + "/" + carnloughMemberPath[4].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + cairndhuPath + "/" + cairndhuMemberPath[4].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + carnloughPath + "/" + carnloughMemberPath[5].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + cairndhuPath + "/" + cairndhuMemberPath[5].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + carnloughPath + "/" + carnloughMemberPath[6].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + cairndhuPath + "/" + cairndhuMemberPath[6].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + carnloughPath + "/" + carnloughMemberPath[7].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + cairndhuPath + "/" + cairndhuMemberPath[7].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + carnloughPath + "/" + carnloughMemberPath[8].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + cairndhuPath + "/" + cairndhuMemberPath[8].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + carnloughPath + "/" + carnloughMemberPath[9].id} element={<MemberAccount />} />
+      <Route path={`/member-account` + cairndhuPath + "/" + cairndhuMemberPath[9].id} element={<MemberAccount />} />
       <Route path={`/add-member` + carnloughPath} element={<AddMember />} />
       <Route path={`/add-member` + cairndhuPath} element={<AddMember />} />
       <Route path={`/add-info` + carnloughPath} element={<AddInfo />} />

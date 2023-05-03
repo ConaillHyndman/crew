@@ -15,7 +15,7 @@ const onSiteInfoClick = () => {
 }
 
 const onSignupButtonClick = () => {
-    const link = "/";
+    const link = "/cairndhu";
     window.location.assign(link);
 };
 

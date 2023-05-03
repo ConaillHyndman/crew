@@ -4,8 +4,16 @@ import "./Header.css"
 import LinkButtonWhite from './LinkButtonWhite';
 
 const onLogoButtonClick = () => {
-    const link = "/";
-    window.location.assign(link);
+    if (window.location.pathname.includes("carnlough")) {
+        const link = "/cairndhu";
+        window.location.assign(link);
+    } else if (window.location.pathname.includes("cairndhu")) {
+        const link = "/carnlough";
+        window.location.assign(link);
+    } else {
+        const link = "/carnlough";
+        window.location.assign(link);
+    }
 };
 
 const onLogOutButtonClick = () => {

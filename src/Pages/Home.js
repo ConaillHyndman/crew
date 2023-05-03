@@ -9,16 +9,26 @@ import siteContent from "../Assets/content/site.json";
 const homeContent = siteContent.site[0].home[0];
 
 let carnloughPath = clubMemberData.clubs[0].carnlough[0].path;
-let cairndhuPath = clubMemberData.clubs[0].cairndhu[0].path;;
+let cairndhuPath = clubMemberData.clubs[0].cairndhu[0].path;
 
 const onCrewListButtonClick = () => {
-    const link = '/crew-lists' + carnloughPath || cairndhuPath;
-    window.location.assign(link);
+    if (window.location.pathname === "/carnlough") {
+        const link = '/crew-lists' + carnloughPath;
+        window.location.assign(link);
+    } else {
+        const link = '/crew-lists' + cairndhuPath;
+        window.location.assign(link);
+    }
 };
 
 const onMyClubButtonClick = () => {
-    const link = '/my-club' + carnloughPath || cairndhuPath;
-    window.location.assign(link);
+    if (window.location.pathname === "/carnlough") {
+        const link = '/my-club' + carnloughPath;
+        window.location.assign(link);
+    } else {
+        const link = '/my-club' + cairndhuPath;
+        window.location.assign(link);
+    }
 };
 
 class Home extends Component {

@@ -6,7 +6,7 @@ import "./ClubMembers.css";
 import clubMemberData from '../Assets/content/club.json'
 
 let carnloughPath = clubMemberData.clubs[0].carnlough[0].path;
-let cairndhuPath = clubMemberData.clubs[0].cairndhu[0].path;;
+let cairndhuPath = clubMemberData.clubs[0].cairndhu[0].path;
 
 const onViewMemberButtonClick = () => {
     const link = "/member-account" + carnloughPath || cairndhuPath;

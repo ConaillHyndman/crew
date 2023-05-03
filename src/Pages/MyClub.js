@@ -26,18 +26,115 @@ const onBackButtonClick = () => {
     window.history.back();
 };
 
-const onViewMemberButtonClick = () => {
-    const link = "/member-account" + carnloughPath || cairndhuPath;
-    window.location.assign(link);
+const onViewMember1ButtonClick = () => {
+    if (window.location.pathname === "/my-club/carnlough") {
+        const link = "/member-account" + carnloughPath + "/" + 1;
+        window.location.assign(link);
+    } else {
+        const link = "/member-account" + cairndhuPath + "/" + 1;
+        window.location.assign(link);
+    }
+};
+
+const onViewMember2ButtonClick = () => {
+    if (window.location.pathname === "/my-club/carnlough") {
+        const link = "/member-account" + carnloughPath + "/" + 2;
+        window.location.assign(link);
+    } else {
+        const link = "/member-account" + cairndhuPath + "/" + 2;
+        window.location.assign(link);
+    }
+};
+const onViewMember3ButtonClick = () => {
+    if (window.location.pathname === "/my-club/carnlough") {
+        const link = "/member-account" + carnloughPath + "/" + 3;
+        window.location.assign(link);
+    } else {
+        const link = "/member-account" + cairndhuPath + "/" + 3;
+        window.location.assign(link);
+    }
+};
+
+const onViewMember4ButtonClick = () => {
+    if (window.location.pathname === "/my-club/carnlough") {
+        const link = "/member-account" + carnloughPath + "/" + 4;
+        window.location.assign(link);
+    } else {
+        const link = "/member-account" + cairndhuPath + "/" + 4;
+        window.location.assign(link);
+    }
+};
+
+const onViewMember5ButtonClick = () => {
+    if (window.location.pathname === "/my-club/carnlough") {
+        const link = "/member-account" + carnloughPath + "/" + 5;
+        window.location.assign(link);
+    } else {
+        const link = "/member-account" + cairndhuPath + "/" + 5;
+        window.location.assign(link);
+    }
+};
+
+const onViewMember6ButtonClick = () => {
+    if (window.location.pathname === "/my-club/carnlough") {
+        const link = "/member-account" + carnloughPath + "/" + 6;
+        window.location.assign(link);
+    } else {
+        const link = "/member-account" + cairndhuPath + "/" + 6;
+        window.location.assign(link);
+    }
+};
+const onViewMember7ButtonClick = () => {
+    if (window.location.pathname === "/my-club/carnlough") {
+        const link = "/member-account" + carnloughPath + "/" + 7;
+        window.location.assign(link);
+    } else {
+        const link = "/member-account" + cairndhuPath + "/" + 7;
+        window.location.assign(link);
+    }
+};
+
+const onViewMember8ButtonClick = () => {
+    if (window.location.pathname === "/my-club/carnlough") {
+        const link = "/member-account" + carnloughPath + "/" + 8;
+        window.location.assign(link);
+    } else {
+        const link = "/member-account" + cairndhuPath + "/" + 8;
+        window.location.assign(link);
+    }
+};
+const onViewMember9ButtonClick = () => {
+    if (window.location.pathname === "/my-club/carnlough") {
+        const link = "/member-account" + carnloughPath + "/" + 9;
+        window.location.assign(link);
+    } else {
+        const link = "/member-account" + cairndhuPath + "/" + 9;
+        window.location.assign(link);
+    }
+};
+
+const onViewMember10ButtonClick = () => {
+    if (window.location.pathname === "/my-club/carnlough") {
+        const link = "/member-account" + carnloughPath + "/" + 10;
+        window.location.assign(link);
+    } else {
+        const link = "/member-account" + cairndhuPath + "/" + 10;
+        window.location.assign(link);
+    }
 };
 
 const onAddMemberButtonClick = () => {
-    const link = "/add-member" + carnloughPath || cairndhuPath;
-    window.location.assign(link);
+    if (window.location.pathname === "/my-club/carnlough") {
+        const link = "/add-member" + carnloughPath;
+        window.location.assign(link);
+    } else {
+        const link = "/add-member" + cairndhuPath;
+        window.location.assign(link);
+    }
 };
 
 function renderList() {
-    if (window.location.pathname === "/club-members/carnlough") {
+    if (window.location.pathname === "/my-club/carnlough") {
         return clubMemberData.clubs[0].carnlough[0].member
     } else {
         return clubMemberData.clubs[0].cairndhu[0].member
@@ -87,7 +184,7 @@ class MyClub extends Component {
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
-                                            onClick={onViewMemberButtonClick}
+                                            onClick={onViewMember1ButtonClick}
                                         />
                                     </td>
                                 </tr>
@@ -98,7 +195,7 @@ class MyClub extends Component {
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
-                                            onClick={onViewMemberButtonClick}
+                                            onClick={onViewMember2ButtonClick}
                                         />
                                     </td>
                                 </tr>
@@ -109,7 +206,7 @@ class MyClub extends Component {
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
-                                            onClick={onViewMemberButtonClick}
+                                            onClick={onViewMember3ButtonClick}
                                         />
                                     </td>
                                 </tr>
@@ -120,7 +217,7 @@ class MyClub extends Component {
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
-                                            onClick={onViewMemberButtonClick}
+                                            onClick={onViewMember4ButtonClick}
                                         />
                                     </td>
                                 </tr>
@@ -131,7 +228,7 @@ class MyClub extends Component {
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
-                                            onClick={onViewMemberButtonClick}
+                                            onClick={onViewMember5ButtonClick}
                                         />
                                     </td>
                                 </tr>
@@ -142,7 +239,7 @@ class MyClub extends Component {
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
-                                            onClick={onViewMemberButtonClick}
+                                            onClick={onViewMember6ButtonClick}
                                         />
                                     </td>
                                 </tr>
@@ -153,7 +250,7 @@ class MyClub extends Component {
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
-                                            onClick={onViewMemberButtonClick}
+                                            onClick={onViewMember7ButtonClick}
                                         />
                                     </td>
                                 </tr>
@@ -164,7 +261,7 @@ class MyClub extends Component {
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
-                                            onClick={onViewMemberButtonClick}
+                                            onClick={onViewMember8ButtonClick}
                                         />
                                     </td>
                                 </tr>
@@ -175,7 +272,7 @@ class MyClub extends Component {
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
-                                            onClick={onViewMemberButtonClick}
+                                            onClick={onViewMember9ButtonClick}
                                         />
                                     </td>
                                 </tr>
@@ -186,7 +283,7 @@ class MyClub extends Component {
                                     <td>
                                         <LinkButtonBlack
                                             text="View >"
-                                            onClick={onViewMemberButtonClick}
+                                            onClick={onViewMember10ButtonClick}
                                         />
                                     </td>
                                 </tr>
