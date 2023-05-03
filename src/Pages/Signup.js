@@ -5,6 +5,7 @@ import logoImage from "../Assets/images/Logo.svg";
 import LinkButtonWhite from '../Components/LinkButtonWhite';
 import FormField from '../Components/FormField';
 import PrimaryButton from '../Components/PrimaryButton';
+import LinkButtonBlack from '../Components/LinkButtonBlack';
 import siteContent from "../Assets/content/site.json";
 
 const signUpContent = siteContent.site[0].signup[0];
@@ -16,6 +17,11 @@ const onSiteInfoClick = () => {
 
 const onSignupButtonClick = () => {
     const link = "/cairndhu";
+    window.location.assign(link);
+};
+
+const onLoginLinkClick = () => {
+    const link = "/login";
     window.location.assign(link);
 };
 
@@ -57,6 +63,13 @@ class Signup extends Component {
                                 onClick={onSignupButtonClick}
                             />
                         </div>
+                        <div className='loginLink'>
+                                <p>{signUpContent.loginContent}</p>
+                                <LinkButtonBlack
+                                    text="Login to your account"
+                                    onClick={onLoginLinkClick}
+                                />
+                            </div>
                     </div>
                 </div>
             </div>

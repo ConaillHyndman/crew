@@ -11,6 +11,12 @@
     padding: 2%;
 }
 
+.loginLink {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
 .logoImage {
     max-width: 200px;
 }

@@ -9,7 +9,8 @@
             ],
             "signup": [
                 {
-                    "pageTitle": "Join the team"
+                    "pageTitle": "Join the team",
+                    "loginContent": "Already have an account?"
                 }
             ],
             "home": [
