@@ -25,6 +25,16 @@
             "siteInfo": [
                 {
                     "pageTitle": "Site information",
+                    "crewPlusStory1": "During the winter months, rowing training is primarily moved indoors to a gym, with the focus being cardio based exercise for stamina and performance. Timings on the rowing machine are recorded and used as part of the process of forming crews. Members who are in the same crew type (male/female/mixed) and age group are compared on personal bests on the rowing machine, forming crews with matching personal bests and strengths.",
+                    "crewPlusStory2": "This process can be tedious for several reasons:",
+                    "crewPlusStory3": "The amount of data collected and stored from the rowing machines for every rower could be many documents and hard to manually organise by any of the club coaches.",
+                    "crewPlusStory4": "The possible risk of losing data from using a range of methods of data collection such as notebooks, whiteboards and outdated file systems.",
+                    "crewPlusStory5": "A potential clash in personal opinions, or conflict between the club members and the coaches who have the sole responsibility of creating crews from all this information. Crew members often feel they have been placed in a crew which does not suit their abilities and performance throughout training.",
+                    "crewPlusStory6": "There is also a risk of bias when club members are allocated to teams, especially where close family or friends are involved in the decision-making process.",
+                    "crewPlusStory7": "Crew+ offers a solution to these problems, as a rowing crew data collection & crew generation services. The app will:",
+                    "crewPlusStory8": "Host data for each individual member relating to training times on the rowing machines from manual coach input.",
+                    "crewPlusStory9": "Provide a dashboard to collate and display the member data in a user friendly & constructive way.",
+                    "crewPlusStory10": "Use the data collected to help to generate crews and display the evidence as to how the suitability of each crew has been calculated and selected.",
                     "siteImages": "Artify Illustrations. Part of Creative Toolkit entertainment section Figma plugin."
                 }
             ],

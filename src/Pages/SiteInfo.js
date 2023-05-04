@@ -23,6 +23,20 @@ class SiteInfo extends Component {
                 </div>
                 <div className='content-container'>
                     <h1 className='h2'>{infoContent.pageTitle}</h1>
+                        <p>{infoContent.crewPlusStory1}</p>
+                        <p>{infoContent.crewPlusStory2}</p>
+                    <ul>
+                        <li>{infoContent.crewPlusStory3}</li>
+                        <li>{infoContent.crewPlusStory4}</li>
+                        <li>{infoContent.crewPlusStory5}</li>
+                        <li>{infoContent.crewPlusStory6}</li>
+                    </ul>
+                        <p>{infoContent.crewPlusStory7}</p>
+                    <ul>
+                        <li>{infoContent.crewPlusStory8}</li>
+                        <li>{infoContent.crewPlusStory9}</li>
+                        <li>{infoContent.crewPlusStory10}</li>
+                    </ul>
                     <p>{infoContent.siteImages}</p>
                 </div>
                 <Footer />
