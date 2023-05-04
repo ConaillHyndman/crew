@@ -5,10 +5,10 @@ import LinkButtonWhite from './LinkButtonWhite';
 
 const onLogoButtonClick = () => {
     if (window.location.pathname.includes("carnlough")) {
-        const link = "/cairndhu";
+        const link = "/carnlough";
         window.location.assign(link);
     } else if (window.location.pathname.includes("cairndhu")) {
-        const link = "/carnlough";
+        const link = "/cairndhu";
         window.location.assign(link);
     } else {
         const link = "/carnlough";
