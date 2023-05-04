@@ -26,8 +26,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route exact path='/' element={<Home />} />
-      <Route index element={<Home />} />
+      <Route exact path='/' element={<Login />} />
+      <Route index element={<Login />} />
       <Route path='/carnlough' element={<Home />} />
       <Route path='/cairndhu' element={<Home />} />
       <Route path='/login' element={<Login />} />
