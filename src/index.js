@@ -39,8 +39,6 @@ root.render(
       <Route path='/site-information' element={<SiteInfo />} />
       <Route path={`/club-members` + carnloughPath} element={<ClubMembers />} />
       <Route path={`/club-members` + cairndhuPath} element={<ClubMembers />} />
-      <Route path={`/member-account` + carnloughPath} element={<MemberAccount />} />
-      <Route path={`/member-account` + cairndhuPath} element={<MemberAccount />} />
       <Route path={`/member-account` + carnloughPath + "/" + carnloughMemberPath[0].id} element={<MemberAccount />} />
       <Route path={`/member-account` + cairndhuPath + "/" + cairndhuMemberPath[0].id} element={<MemberAccount />} />
       <Route path={`/member-account` + carnloughPath + "/" + carnloughMemberPath[1].id} element={<MemberAccount />} />
